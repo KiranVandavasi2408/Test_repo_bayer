@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { useCloudFrontTheme, useThemeColors, useComputedThemeColor } from '../hooks/use-cloudfront-theme';
 import type { ThemeName, ColorLevel } from '../lib/cloudfront-themes';
