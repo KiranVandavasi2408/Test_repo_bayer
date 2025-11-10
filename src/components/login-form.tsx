@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Eye, EyeOff, Lock, Mail } from "lucide-react";
+import Link from "next/link";
 
 interface LoginFormProps {
   onSuccess?: () => void;
@@ -136,9 +137,9 @@ export function LoginForm({ onSuccess }: LoginFormProps) {
 
       <div className="text-center text-sm">
         <span className="text-gray-500">Don't have an account?</span>{" "}
-        <a href="#" className="font-medium text-primary-600 hover:text-primary-500">
+        <Link href="/signup" className="font-medium text-primary-600 hover:text-primary-500">
           Sign up
-        </a>
+        </Link>
       </div>
     </form>
   );
