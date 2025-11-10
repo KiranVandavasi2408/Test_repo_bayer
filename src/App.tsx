@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { LoginForm } from './components/login-form';
-import { SocialLogin } from './components/social-login';
 import { Check } from 'lucide-react';
 
 function App() {
@@ -60,10 +59,6 @@ function App() {
           ) : null}
           
           <LoginForm onSuccess={handleLoginSuccess} />
-          
-          <div className="mt-6">
-            <SocialLogin />
-          </div>
         </div>
       </div>
       
